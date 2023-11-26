@@ -1,0 +1,15 @@
+<Grid>
+    code: text
+    GridLayout:
+        cols: 1
+        rows: 4
+        size: root.width, root.height
+        TextInput:
+            id: text
+            font_size: root.height * root.width / 15000
+            size_hint: 1, 1
+        Button:
+            size_hint: 1, root.height * root.width / 2000000
+            text: "Translate"
+            font_size: root.height * root.width / 10000
+            on_press: root.translate()
